@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
             request.setAttribute("user", user);
             request.getRequestDispatcher("LoginSuccess.jsp").forward(request, response);
         } else {
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/Login.html");
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.html");
             PrintWriter out = response.getWriter();
             out.println("<font color=red>User name or password is matched .</font>");
             rd.include(request, response);

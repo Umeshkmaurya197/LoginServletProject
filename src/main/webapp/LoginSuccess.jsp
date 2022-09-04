@@ -6,6 +6,6 @@
 </head>
 <body>
 <h3> Hi <%= request.getAttribute("user")%>,Login successful</h3>
-<a href="Login.html">Login Pages</a>
+<a href="index.html">Login Pages</a>
 </body>
 </html>
